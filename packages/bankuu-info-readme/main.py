@@ -47,7 +47,7 @@ def main():
         for key in info['skill'].keys():
             skill_icon.extend([library for library in info['skill'][key]['library']])
         doc.add_element(Paragraph(
-            ['<img src="packages/bankuu-info-resource/image/skill-{icon}.png" style="max-height: 30px;"/> '.format(icon=icon) for icon in skill_icon]),
+            ['<img src="packages/bankuu-info-resource/image/skill-{icon}.png"/> '.format(icon=icon) for icon in skill_icon]),
         )
         doc.output_page()
 
