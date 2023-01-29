@@ -12,74 +12,96 @@ about:
   hometown: "Samut Sakhon, Thailand"
   birthday: "1990-04-10"
   contact:
-    github: "https://github.com/bankuu"
-    linkedin: "https://www.linkedin.com/in/bankuu"
-    email: "ban.kuu@yahoo.com"
+    website:
+      shields-icon: 'google chrome'
+      color: '348422'
+      link: "https://bankuu.info"
+    github:
+      shields-icon: 'github'
+      color: '171515'
+      link: "https://github.com/bankuu"
+    linkedin:
+      shields-icon: 'linkedin'
+      color: '0072b1'
+      link: "https://www.linkedin.com/in/bankuu"
+    email:
+      shields-icon: 'yahoo'
+      color: '720e9e'
+      link: "mailto:ban.kuu@yahoo.com"
+    hashnode:
+      shields-icon: 'hashnode'
+      color: '3662E3'
+      link: "https://blog.god2rt.com"
 skill:
-  currently:
-    golang:
-      name: "Golang"
-      library:
-        - fiber:
-            name: "Gofiber"
-            github: "https://github.com/gofiber/fiber"
-          echo:
-            name: "Echo"
-            github: "https://github.com/labstack/echo"
-    dart:
-      name: "Dart"
-      library:
-        - flutter:
-            name: "Flutter"
-            github: "https://github.com/flutter"
-        - autoroute:
-            name: "Auto Route"
-            github: "https://github.com/Milad-Akarie/auto_route_library"
-        - riverpod:
-            name: "Riverpod"
-            github: "https://github.com/rrousselgit/riverpod"
-        - freezed:
-            name: "Freezed"
-            github: "https://github.com/rrousselGit/freezed"
-    other:
-      name: "Other"
-      image: "image/skill-other.png"
-      library:
-        - firebase:
-            name: "Google Firebase"
-            github: "https://github.com/firebase"
-        - grpc:
-            name: "gRPC"
-            github: "https://github.com/grpc/grpc"
-        - reactivex:
-            name: "ReactiveX"
-            github: "https://github.com/ReactiveX"
+  golang:
+    name: "Golang"
+    library:
+      gofiber:
+        name: "Gofiber"
+        github: "https://github.com/gofiber/fiber"
+      echo:
+        name: "Echo"
+        github: "https://github.com/labstack/echo"
+  dart:
+    name: "Dart"
+    library:
+      flutter:
+        name: "Flutter"
+        github: "https://github.com/flutter"
+      autoroute:
+        name: "Auto Route"
+        github: "https://github.com/Milad-Akarie/auto_route_library"
+      riverpod:
+        name: "Riverpod"
+        github: "https://github.com/rrousselgit/riverpod"
+      freezed:
+        name: "Freezed"
+        github: "https://github.com/rrousselGit/freezed"
+  other:
+    name: "Other"
+    library:
+      firebase:
+        name: "Google Firebase"
+        github: "https://github.com/firebase"
+      grpc:
+        name: "gRPC"
+        github: "https://github.com/grpc/grpc"
+      reactivex:
+        name: "ReactiveX"
+        github: "https://github.com/ReactiveX"
 experience:
-  - kayena:
-      name: "Kayena Simulations Co., Ltd."
-      link: "https://kayena-simulations.io"
-      year: "2022 ~ Now"
-  - tdev:
-      name: "T-DEV Co., Ltd."
-      link: "https://t-dev.co"
-      year: "2018 ~ 2022"
-  - bighead:
-      name: "Bighead Creative Co., Ltd."
-      link: "https://bighead-creative.com"
-      year: "2016 ~ 2018"
-  - pinperty:
-      name: "Pinperty Co., Ltd."
-      link: "https://pinperty.com"
-      year: "2015 ~ 2016"
-  - uih:
-      name: "UIH Co., Ltd."
-      link: "http://uih.co.th"
-      year: "2014 ~ 2015"
-  - nysiis:
-      name: "Nysiis Solutions Co., Ltd."
-      link: "http://nysiissolutions.com"
-      year: "2012 ~ 2014"
+  - code: "kayena"
+    name: "Kayena Marketing Simulations Co., Ltd."
+    link: "https://kayena-simulations.io"
+    year: "2022 ~ Now"
+  - code: "tdev"
+    name: "T-DEV Co., Ltd."
+    link: "https://t-dev.co"
+    year: "2018 ~ 2022"
+  - code: "bighead"
+    name: "Bighead Creative Co., Ltd."
+    link: "https://bighead-creative.com"
+    year: "2016 ~ 2018"
+  - code: "pinperty"
+    name: "Pinperty Co., Ltd."
+    link: "https://pinperty.com"
+    year: "2015 ~ 2016"
+  - code: "uih"
+    name: "UIH Co., Ltd."
+    link: "http://uih.co.th"
+    year: "2014 ~ 2015"
+  - code: "nysiis"
+    name: "Nysiis Solutions Co., Ltd."
+    link: "http://nysiissolutions.com"
+    year: "2012 ~ 2014"
 
+side-project:
+  - code: god2rt
+    name: "God2rt"
+    link: "https://god2rt.com"
 
-
-
+favourite:
+  listen:
+    - Citypop
+    - Lo-Fi
+    - Soul

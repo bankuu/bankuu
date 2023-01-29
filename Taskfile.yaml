@@ -1,6 +1,11 @@
 version: '3'
 
 tasks:
-  source-deliver:
+  readme-build:
+    dir: packages/bankuu-info-readme
     cmds:
-      - mkdir -p packages/bankuu-info-app/source/ && cp -r packages/bankuu-info-source/* packages/bankuu-info-app/resource/
+      - venv/bin/python3 main.py
+
+  readme-watch:
+    cmds:
+      - find packages/bankuu-info-readme/ | entr task readme-build
