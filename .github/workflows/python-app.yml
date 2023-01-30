@@ -29,11 +29,12 @@ jobs:
       working-directory: packages/bankuu-info-readme
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Apply README.md changes
+        commit_message: 'Apply README.md changes'
     - name: "Merge develop -> master if changes have been detected"
       uses: devmasx/merge-branch@master
       with:
-        type: now
-        from_branch: develop
+        type: now 
+        label_name: 'Merged develop to master'
         target_branch: master
+        commit_message: 'Merged develop to master'
         github_token: ${{ github.token }}
