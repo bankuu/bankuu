@@ -13,8 +13,7 @@ def main():
         doc.add_header("🙏🏽 Sawandee [Hi] - I'm {name} [{other_name}]".format(name=name[0], other_name=', '.join(name[1:])), 3)
 
         # -- Create Contact Icons
-        icon_format = '<img src="https://img.shields.io/badge/-{text}-{color}?style=flat-square&amp;labelColor={color}&amp;' \
-                      'logoColor=white&amp;logo={logo}&amp;link={link}" style="max-width: 100%;">'
+        icon_format = '[![{text}](https://img.shields.io/badge/-{text}-{color}?style=flat-square&amp;labelColor={color}&amp;logoColor=white&amp;logo={logo})]({link}) '
         contact_icons = []
         for key in info['about']['contact']:
             item = info['about']['contact'][key]
@@ -33,11 +32,14 @@ def main():
         side_project.extend([InlineText(item['name']).link(item['link']) for item in info['side-project']])
         side_project = Paragraph(side_project)
 
-        blog = Paragraph(["📑 Keep my knowledge at ", InlineText("Hashnode").link(info['about']['contact']['hashnode']['link'])])
+
+        challenge = Paragraph(["🗻 Challenge myself on ", InlineText("HackerEarth").link(info['about']['contact']['hackerearth']['link'])])
+
+        blog = Paragraph(["📑 Keep my knowledge at ", InlineText("HashNode").link(info['about']['contact']['hashnode']['link'])])
 
         listen = Paragraph(["🎧 Music taste are {listen}".format(listen=", ".join(info['favourite']['listen']))])
 
-        doc.add_element(MDList([currently_working, side_project, blog, listen]))
+        doc.add_element(MDList([currently_working, side_project, challenge, blog, listen]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)

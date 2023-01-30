@@ -13,7 +13,7 @@ about:
   birthday: "1990-04-10"
   contact:
     website:
-      shields-icon: 'google chrome'
+      shields-icon: 'googlechrome'
       color: '348422'
       link: "https://bankuu.info"
     github:
@@ -32,6 +32,10 @@ about:
       shields-icon: 'hashnode'
       color: '3662E3'
       link: "https://blog.god2rt.com"
+    hackerearth:
+      shields-icon: 'hackerearth'
+      color: '333752'
+      link: https://www.hackerearth.com/@bankuu
 skill:
   golang:
     name: "Golang"
