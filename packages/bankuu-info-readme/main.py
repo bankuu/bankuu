@@ -10,9 +10,7 @@ def main():
         info = yaml.load(f, Loader=SafeLoader)
         
         # make out path
-        if not os.path.exists('out'):
-            os.makedirs('out')
-            doc = snakemd.new_doc("out/README")
+        doc = snakemd.new_doc("README")
 
         name = list(info['about']['name'].values())
         # -- Header

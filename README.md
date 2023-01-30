@@ -1,1 +1,1 @@
-README.md
+packages/bankuu-info-readme/README.md
