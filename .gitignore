@@ -45,6 +45,3 @@ app.*.map.json
 
 # App Resource
 /packages/bankuu-info-app/resource/
-
-# Out folder
-**/out/ 

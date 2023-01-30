@@ -10,7 +10,7 @@ def main():
         info = yaml.load(f, Loader=SafeLoader)
         
         # make out path
-        doc = snakemd.new_doc("README")
+        doc = snakemd.new_doc("../../README")
 
         name = list(info['about']['name'].values())
         # -- Header
