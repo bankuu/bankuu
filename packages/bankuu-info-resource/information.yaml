@@ -13,26 +13,32 @@ about:
   birthday: "1990-04-10"
   contact:
     website:
+      name: 'Website'
       shields-icon: 'googlechrome'
       color: '348422'
       link: "https://bankuu.info"
-    github:
+    github:  
+      name: 'Github'
       shields-icon: 'github'
       color: '171515'
       link: "https://github.com/bankuu"
     linkedin:
+      name: 'LinkedIn'
       shields-icon: 'linkedin'
       color: '0072b1'
       link: "https://www.linkedin.com/in/bankuu"
     email:
+      name: 'E-Mail'
       shields-icon: 'yahoo'
       color: '720e9e'
       link: "mailto:ban.kuu@yahoo.com"
     hashnode:
+      name: 'HashNode'
       shields-icon: 'hashnode'
       color: '3662E3'
       link: "https://god2rt.com"
     hackerearth:
+      name: 'HackerEarth'
       shields-icon: 'hackerearth'
       color: '333752'
       link: https://hackerearth.com/@bankuu

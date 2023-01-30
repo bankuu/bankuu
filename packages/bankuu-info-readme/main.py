@@ -19,9 +19,9 @@ def main():
         # -- Create Contact Icons
         icon_format = '[![{text}](https://img.shields.io/badge/-{text}-{color}?style=flat-square&amp;labelColor={color}&amp;logoColor=white&amp;logo={logo})]({link}) '
         contact_icons = []
-        for key in info['about']['contact']:
-            item = info['about']['contact'][key]
-            contact_icons.append(icon_format.format(text=key.capitalize(), color=item['color'], logo=item['shields-icon'], link=item['link']))
+        
+        for item in info['about']['contact'].values(): 
+            contact_icons.append(icon_format.format(text=item['name'], color=item['color'], logo=item['shields-icon'], link=item['link']))
         doc.add_paragraph(' '.join(contact_icons))
         # --
 
