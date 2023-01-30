@@ -31,11 +31,11 @@ about:
     hashnode:
       shields-icon: 'hashnode'
       color: '3662E3'
-      link: "https://blog.god2rt.com"
+      link: "https://god2rt.com"
     hackerearth:
       shields-icon: 'hackerearth'
       color: '333752'
-      link: https://www.hackerearth.com/@bankuu
+      link: https://hackerearth.com/@bankuu
 skill:
   golang:
     name: "Golang"
@@ -102,7 +102,7 @@ experience:
 side-project:
   - code: god2rt
     name: "God2rt"
-    link: "https://god2rt.com"
+    link: "https://god2rt.com/project"
 
 favourite:
   listen:
