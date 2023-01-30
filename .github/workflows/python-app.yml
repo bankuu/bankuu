@@ -32,7 +32,6 @@ jobs:
       with:
         commit_message: Apply README.md changes
     - name: "Merge develop -> master if changes have been detected"
-      if: steps.auto-commit-action.outputs.changes_detected == 'true'
       uses: devmasx/merge-branch@master
       with:
         type: now
