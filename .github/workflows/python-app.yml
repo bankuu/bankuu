@@ -7,8 +7,7 @@ on:
   push:
     branches: [ "develop" ]
 
-permissions:
-  contents: read
+permissions: write-all
 
 jobs:
   build:
@@ -27,3 +26,14 @@ jobs:
     - name: Run main.py
       run: |
         python main.py
+      working-directory: packages/bankuu-info-readme
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply README.md changes
+    - name: "Merge develop -> master if changes have been detected"
+      uses: devmasx/merge-branch@master
+      with:
+        type: now
+        from_branch: develop
+        target_branch: master
+        github_token: ${{ github.token }}
