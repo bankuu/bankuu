@@ -4,14 +4,13 @@ tasks:
   readme-init-venv:
     dir: packages/bankuu-info-readme
     cmds:
-      - virtualenv .venv
-      - .venv/bin/python3 -m pip install -r requirements.txt
+      - virtualenv venv 
+      - venv/bin/python3 -m pip install -r requirements.txt
 
   readme-build:
     dir: packages/bankuu-info-readme
     cmds:
-      - .venv/bin/python3 pipreqs
-      - .venv/bin/python3 main.py
+      - venv/bin/python3 main.py
 
   readme-watch:
     cmds:
