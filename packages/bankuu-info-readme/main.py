@@ -1,4 +1,5 @@
 import yaml
+import os
 import snakemd
 from snakemd import InlineText, MDList, Paragraph
 from yaml.loader import SafeLoader
@@ -7,7 +8,12 @@ from yaml.loader import SafeLoader
 def main():
     with open('../bankuu-info-resource/information.yaml') as f:
         info = yaml.load(f, Loader=SafeLoader)
-        doc = snakemd.new_doc("../../README")
+        
+        # make out path
+        if not os.path.exists('out'):
+            os.makedirs('out')
+            doc = snakemd.new_doc("out/README")
+
         name = list(info['about']['name'].values())
         # -- Header
         doc.add_header("🙏🏽 Sawandee [Hi] - I'm {name} [{other_name}]".format(name=name[0], other_name=', '.join(name[1:])), 3)
@@ -31,7 +37,6 @@ def main():
         side_project = [InlineText("🏗️ Side project is ")]
         side_project.extend([InlineText(item['name']).link(item['link']) for item in info['side-project']])
         side_project = Paragraph(side_project)
-
 
         challenge = Paragraph(["🗻 Challenge myself on ", InlineText("HackerEarth").link(info['about']['contact']['hackerearth']['link'])])
 
