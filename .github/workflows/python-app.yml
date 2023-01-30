@@ -36,5 +36,5 @@ jobs:
         type: now 
         label_name: 'Merged develop to master'
         target_branch: master
-        commit_message: 'Merged develop to master'
+        message: 'Merged develop to master'
         github_token: ${{ github.token }}
