@@ -32,17 +32,15 @@ def main():
             info['experience'][0]['name'], info['experience'][0]['link'],
         )
 
-        side_project = [InlineText("🏗️ Side project is ")]
-        side_project.extend([InlineText(item['name']).link(item['link']) for item in info['side-project']])
-        side_project = Paragraph(side_project)
+        livein = Paragraph([InlineText("🛌  Live in {location}".format(location=info['about']['livein']))])
 
-        challenge = Paragraph(["🗻 Challenge myself on ", InlineText("HackerEarth").link(info['about']['contact']['hackerearth']['link'])])
+        challenge = Paragraph(["🗻 Challenge myself on ", InlineText("HackerRank").link(info['about']['contact']['hackerrank']['link'])])
 
         blog = Paragraph(["📑 Keep my knowledge at ", InlineText("HashNode").link(info['about']['contact']['hashnode']['link'])])
 
         listen = Paragraph(["🎧 Music taste are {listen}".format(listen=", ".join(info['favourite']['listen']))])
 
-        doc.add_element(MDList([currently_working, side_project, challenge, blog, listen]))
+        doc.add_element(MDList([currently_working, livein, challenge, blog, listen]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)

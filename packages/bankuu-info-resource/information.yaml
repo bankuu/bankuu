@@ -9,7 +9,7 @@ about:
     zh: "本庫"
   fullname: "Nutchaitat Tantanasuwan"
   headline: "Software Developer"
-  hometown: "Samut Sakhon, Thailand"
+  livein: "Bangkok, Thailand"
   birthday: "1990-04-10"
   contact:
     website:
@@ -32,16 +32,16 @@ about:
       shields-icon: 'yahoo'
       color: '720e9e'
       link: "mailto:ban.kuu@yahoo.com"
+    hackerrank:
+      name: 'HackerRank'
+      shields-icon: 'hackerrank'
+      color: '333752'
+      link: 'https://www.hackerrank.com/bankuu'
     hashnode:
       name: 'HashNode'
       shields-icon: 'hashnode'
       color: '3662E3'
-      link: "https://god2rt.com"
-    hackerearth:
-      name: 'HackerEarth'
-      shields-icon: 'hackerearth'
-      color: '333752'
-      link: https://hackerearth.com/@bankuu
+      link: 'https://god2rt.com'
 skill:
   golang:
     name: "Golang"
