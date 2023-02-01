@@ -3,6 +3,7 @@ import os
 import snakemd
 from snakemd import InlineText, MDList, Paragraph
 from yaml.loader import SafeLoader
+from urllib import parse
 
 
 def main():
@@ -21,7 +22,7 @@ def main():
         contact_icons = []
         
         for item in info['about']['contact'].values(): 
-            contact_icons.append(icon_format.format(text=item['name'], color=item['color'], logo=item['shields-icon'], link=item['link']))
+            contact_icons.append(icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'], link=item['link']))
         doc.add_paragraph(' '.join(contact_icons))
         # --
 

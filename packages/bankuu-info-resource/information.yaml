@@ -30,13 +30,23 @@ about:
     hackerrank:
       name: 'HackerRank'
       shields-icon: 'hackerrank'
-      color: '333752'
+      color: '3CB371'
       link: 'https://www.hackerrank.com/bankuu'
+    hackerearth:
+      name: 'HackerEarth'
+      shields-icon: 'hackerearth'
+      color: '333752'
+      link: 'https://www.hackerearth.com/@bankuu'
     hashnode:
       name: 'HashNode'
       shields-icon: 'hashnode'
       color: '3662E3'
       link: 'https://god2rt.com'
+    donation:
+      name: 'Buy Me The Coffee'
+      shields-icon: 'BuyMeACoffee'
+      color: 'DE3163'
+      link: 'https://buy.stripe.com/28o6pQ9xceVha8o4gj'
 skill:
   golang:
     name: "Golang"
