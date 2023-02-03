@@ -44,17 +44,19 @@ def main():
         challenge = Paragraph(
             [
                 "🗻 Challenge myself on ",
-                InlineText(', '.join([item['name'] for item in info['about']['challenge'].values()])).link(
-                    item['link']
-                )
+                ', '.join([
+                    InlineText(item['name']).link(item['link']).render() for item in
+                    info['about']['challenge'].values()
+                ])
             ]
         )
 
         blog = Paragraph(
             ["📑 Keep my knowledge at ",
-             InlineText(', '.join([item['name'] for item in info['about']['knowledge'].values()])).link(
-                 item['link']
-             )
+             ', '.join(
+                 [
+                     InlineText(item['name']).link(item['link']).render() for item in
+                     info['about']['knowledge'].values()])
              ]
         )
 
