@@ -1,9 +1,9 @@
-import yaml
-import os
+from urllib import parse
+
 import snakemd
+import yaml
 from snakemd import InlineText, MDList, Paragraph
 from yaml.loader import SafeLoader
-from urllib import parse
 
 
 def main():
@@ -44,8 +44,9 @@ def main():
         challenge = Paragraph(
             [
                 "🗻 Challenge myself on ",
-                ', '.join([
-                    InlineText(item['name']).link(item['link']).render() for item in
+                ' '.join([
+                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+                                       link=item['link']) for item in
                     info['about']['challenge'].values()
                 ])
             ]
@@ -53,9 +54,10 @@ def main():
 
         blog = Paragraph(
             ["📑 Keep my knowledge at ",
-             ', '.join(
+             ' '.join(
                  [
-                     InlineText(item['name']).link(item['link']).render() for item in
+                     icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+                                        link=item['link']) for item in
                      info['about']['knowledge'].values()])
              ]
         )

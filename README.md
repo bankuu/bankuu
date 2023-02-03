@@ -8,8 +8,8 @@
 
 - 🖥️ Currently working at [Kayena Marketing Simulations Co., Ltd.](https://kayena-simulations.io)
 - 🛌 Live in Bangkok, Thailand
-- 🗻 Challenge myself on [HackerRank](https://www.hackerrank.com/bankuu), [HackerEarth](https://www.hackerearth.com/@bankuu)
-- 📑 Keep my knowledge at [HashNode](https://god2rt.com)
+- 🗻 Challenge myself on [![HackerRank](https://img.shields.io/badge/-HackerRank-3CB371?style=flat-square&amp;labelColor=3CB371&amp;logoColor=white&amp;logo=hackerrank)](https://www.hackerrank.com/bankuu) [![HackerEarth](https://img.shields.io/badge/-HackerEarth-333752?style=flat-square&amp;labelColor=333752&amp;logoColor=white&amp;logo=hackerearth)](https://www.hackerearth.com/@bankuu)
+- 📑 Keep my knowledge at [![HashNode](https://img.shields.io/badge/-HashNode-3662E3?style=flat-square&amp;labelColor=3662E3&amp;logoColor=white&amp;logo=hashnode)](https://god2rt.com)
 - 🎧 Music taste are Citypop, Lo-Fi, Soul
 
 ---
