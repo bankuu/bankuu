@@ -52,19 +52,9 @@ def main():
             ]
         )
 
-        blog = Paragraph(
-            ["📑 Keep my knowledge at ",
-             ' '.join(
-                 [
-                     icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-                                        link=item['link']) for item in
-                     info['about']['knowledge'].values()])
-             ]
-        )
-
         listen = Paragraph(["🎧 Music taste are {listen}".format(listen=", ".join(info['favourite']['listen']))])
 
-        doc.add_element(MDList([currently_working, livein, challenge, blog, listen]))
+        doc.add_element(MDList([currently_working, livein, challenge, listen]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)
