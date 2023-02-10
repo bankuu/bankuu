@@ -33,16 +33,17 @@ about:
       color: 'DE3163'
       link: 'https://buy.stripe.com/28o6pQ9xceVha8o4gj'
   challenge:
+    leetcode:
+      name: 'Leetcode'
+      shields-icon: 'leetcode'
+      color: 'F2A53F'
+      link: 'https://leetcode.com/bankuu'
     hackerrank:
       name: 'HackerRank'
       shields-icon: 'hackerrank'
       color: '3CB371'
       link: 'https://www.hackerrank.com/bankuu'
-    hackerearth:
-      name: 'HackerEarth'
-      shields-icon: 'hackerearth'
-      color: '333752'
-      link: 'https://www.hackerearth.com/@bankuu'
+
 skill:
   golang:
     name: "Golang"
