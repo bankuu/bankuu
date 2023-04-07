@@ -15,7 +15,7 @@ about:
     github:  
       name: 'Github'
       shields-icon: 'github'
-      color: '171515'
+      color: '666699'
       link: "https://github.com/bankuu"
     linkedin:
       name: 'LinkedIn'
@@ -25,8 +25,13 @@ about:
     email:
       name: 'Email'
       shields-icon: 'yahoo'
-      color: '720e9e'
+      color: '444444'
       link: "mailto:ban.kuu@yahoo.com"
+    cv:  
+      name: 'Bankuu.Info'
+      shields-icon: 'googlechrome'
+      color: '11AA33'
+      link: "https://bankuu.info"
     donation:
       name: 'Buy Me The Coffee'
       shields-icon: 'BuyMeACoffee'
@@ -38,11 +43,12 @@ about:
       shields-icon: 'leetcode'
       color: 'F2A53F'
       link: 'https://leetcode.com/bankuu'
-    hackerrank:
-      name: 'HackerRank'
-      shields-icon: 'hackerrank'
-      color: '3CB371'
-      link: 'https://www.hackerrank.com/bankuu'
+  listen:    
+    citypop:
+      name: 'Citypop.Live'
+      shields-icon: 'googlechrome'
+      color: '800080'
+      link: 'https://www.citypop.live'
 
 skill:
   golang:
@@ -111,9 +117,3 @@ side-project:
   - code: god2rt
     name: "God2rt"
     link: "https://god2rt.com/project"
-
-favourite:
-  listen:
-    - Citypop
-    - Lo-Fi
-    - Soul

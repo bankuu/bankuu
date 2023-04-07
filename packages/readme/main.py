@@ -7,7 +7,7 @@ from yaml.loader import SafeLoader
 
 
 def main():
-    with open('../bankuu-info-resource/information.yaml') as f:
+    with open('../resource/information.yaml') as f:
         info = yaml.load(f, Loader=SafeLoader)
 
         # make out path
@@ -40,6 +40,13 @@ def main():
         )
 
         livein = Paragraph([InlineText("🛌  Live in {location}".format(location=info['about']['livein']))])
+        
+        cv = Paragraph([InlineText("📜  Curriculum Vitae at "),
+                        ' '.join([
+                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+                                       link=item['link']) for item in
+                    [info['about']['contact']['cv']]
+                ])])
 
         challenge = Paragraph(
             [
@@ -52,9 +59,18 @@ def main():
             ]
         )
 
-        listen = Paragraph(["🎧 Music taste are {listen}".format(listen=", ".join(info['favourite']['listen']))])
+        listen = Paragraph(
+            [
+                "🎧 Music taste at ",
+                ' '.join([
+                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+                                       link=item['link']) for item in
+                    info['about']['listen'].values()
+                ])
+            ]
+        )
 
-        doc.add_element(MDList([currently_working, livein, challenge, listen]))
+        doc.add_element(MDList([currently_working, livein, cv, challenge, listen]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)
@@ -64,7 +80,7 @@ def main():
         for key in info['skill'].keys():
             skill_icon.extend([library for library in info['skill'][key]['library']])
         doc.add_element(Paragraph(
-            ['<img src="packages/bankuu-info-resource/image/skill-{icon}.png"/> '.format(icon=icon) for icon in
+            ['<img src="packages/resource/image/skill-{icon}.png"/> '.format(icon=icon) for icon in
              skill_icon]),
         )
 
