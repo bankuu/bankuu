@@ -27,11 +27,6 @@ about:
       shields-icon: 'yahoo'
       color: '444444'
       link: "mailto:ban.kuu@yahoo.com"
-    cv:  
-      name: 'Bankuu.Info'
-      shields-icon: 'googlechrome'
-      color: '11AA33'
-      link: "https://bankuu.info"
     donation:
       name: 'Buy Me The Coffee'
       shields-icon: 'BuyMeACoffee'
@@ -89,9 +84,17 @@ skill:
         github: "https://github.com/ReactiveX"
 experience:
   - code: "kayena"
-    name: "Kayena Marketing Simulations Co., Ltd."
+    name: "Kayena Marketing Simulations"
     link: "https://kayena-simulations.io"
     year: "2022 ~ Now"
+  - code: "ducklab"
+    name: "duck Lab - duck group"
+    link: "https://duckgroup.co"
+    year: "2023 ~ Now"
+  - code: "hobby"
+    name: "game modding - DLThai.Store"
+    link: "https://dlthai.store"
+    year: "2023 ~ Now"
   - code: "tdev"
     name: "T-DEV Co., Ltd."
     link: "https://t-dev.co"

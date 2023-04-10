@@ -34,43 +34,43 @@ def main():
         doc.add_header("🙋🏽 My Facts", 3)
 
         currently_working = Paragraph([
-            InlineText("🖥️ Currently working at {last_location}".format(
-                last_location=info['experience'][0]['name']))]).insert_link(
-            info['experience'][0]['name'], info['experience'][0]['link'],
-        )
+            InlineText("🖥️ Currently working at {last_working}".format(last_working=info['experience'][0]['name']),)
+        ]).insert_link(info['experience'][0]['name'], info['experience'][0]['link'])
+        
+        currently_freelance = Paragraph([
+            InlineText("⌨️ Currently consultant at {last_freelance}".format(last_freelance=info['experience'][1]['name']),)
+        ]).insert_link(info['experience'][1]['name'], info['experience'][1]['link'])
+
+        currently_hoddy = Paragraph([
+            InlineText("🎮 Currently hobby at {last_hobby}".format(last_hobby=info['experience'][2]['name']),)
+        ]).insert_link(info['experience'][2]['name'], info['experience'][2]['link'])
 
         livein = Paragraph([InlineText("🛌  Live in {location}".format(location=info['about']['livein']))])
         
-        cv = Paragraph([InlineText("📜  Curriculum Vitae at "),
-                        ' '.join([
-                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-                                       link=item['link']) for item in
-                    [info['about']['contact']['cv']]
-                ])])
 
-        challenge = Paragraph(
-            [
-                "🗻 Challenge myself on ",
-                ' '.join([
-                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-                                       link=item['link']) for item in
-                    info['about']['challenge'].values()
-                ])
-            ]
-        )
+        # challenge = Paragraph(
+        #     [
+        #         "🗻 Challenge myself on ",
+        #         ' '.join([
+        #             icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+        #                                link=item['link']) for item in
+        #             info['about']['challenge'].values()
+        #         ])
+        #     ]
+        # )
 
-        listen = Paragraph(
-            [
-                "🎧 Music taste at ",
-                ' '.join([
-                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-                                       link=item['link']) for item in
-                    info['about']['listen'].values()
-                ])
-            ]
-        )
+        # listen = Paragraph(
+        #     [
+        #         "🎧 Music taste at ",
+        #         ' '.join([
+        #             icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+        #                                link=item['link']) for item in
+        #             info['about']['listen'].values()
+        #         ])
+        #     ]
+        # )
 
-        doc.add_element(MDList([currently_working, livein, cv, challenge, listen]))
+        doc.add_element(MDList([currently_working, currently_freelance, currently_hoddy, livein]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)
