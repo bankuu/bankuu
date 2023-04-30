@@ -7,8 +7,8 @@
 ### 🙋🏽 My Facts
 
 - 🖥️ Currently working at [Kayena Marketing Simulations](https://kayena-simulations.io)
-- ⌨️ Currently consultant at [duck Lab - duck group](https://duckgroup.co)
-- 🎮 Currently hobby at [game modding - DLThai.Store](https://dlthai.store)
+- ⌨️ Currently freelance at [GōRUTAN Network](https://gorutan.net)
+- 🗻 Challenge myself on [![HackerRank](https://img.shields.io/badge/-HackerRank-3AC66D?style=flat-square&amp;labelColor=3AC66D&amp;logoColor=white&amp;logo=hackerrank)](https://www.hackerrank.com/bankuu)
 - 🛌 Live in Bangkok, Thailand
 
 ---

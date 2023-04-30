@@ -34,10 +34,10 @@ about:
       link: 'https://buy.stripe.com/28o6pQ9xceVha8o4gj'
   challenge:
     leetcode:
-      name: 'Leetcode'
-      shields-icon: 'leetcode'
-      color: 'F2A53F'
-      link: 'https://leetcode.com/bankuu'
+      name: 'HackerRank'
+      shields-icon: 'hackerrank'
+      color: '3AC66D'
+      link: 'https://www.hackerrank.com/bankuu'
   listen:    
     citypop:
       name: 'Citypop.Live'
@@ -87,14 +87,10 @@ experience:
     name: "Kayena Marketing Simulations"
     link: "https://kayena-simulations.io"
     year: "2022 ~ Now"
-  - code: "ducklab"
-    name: "duck Lab - duck group"
-    link: "https://duckgroup.co"
-    year: "2023 ~ Now"
-  - code: "hobby"
-    name: "game modding - DLThai.Store"
-    link: "https://dlthai.store"
-    year: "2023 ~ Now"
+  - code: "gorutan"
+    name: "GōRUTAN Network"
+    link: "https://gorutan.net"
+    year: "2021 ~ Now"
   - code: "tdev"
     name: "T-DEV Co., Ltd."
     link: "https://t-dev.co"

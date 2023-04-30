@@ -38,26 +38,23 @@ def main():
         ]).insert_link(info['experience'][0]['name'], info['experience'][0]['link'])
         
         currently_freelance = Paragraph([
-            InlineText("⌨️ Currently consultant at {last_freelance}".format(last_freelance=info['experience'][1]['name']),)
+            InlineText("⌨️ Currently freelance at {last_freelance}".format(last_freelance=info['experience'][1]['name']),)
         ]).insert_link(info['experience'][1]['name'], info['experience'][1]['link'])
 
-        currently_hoddy = Paragraph([
-            InlineText("🎮 Currently hobby at {last_hobby}".format(last_hobby=info['experience'][2]['name']),)
-        ]).insert_link(info['experience'][2]['name'], info['experience'][2]['link'])
 
         livein = Paragraph([InlineText("🛌  Live in {location}".format(location=info['about']['livein']))])
         
 
-        # challenge = Paragraph(
-        #     [
-        #         "🗻 Challenge myself on ",
-        #         ' '.join([
-        #             icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-        #                                link=item['link']) for item in
-        #             info['about']['challenge'].values()
-        #         ])
-        #     ]
-        # )
+        challenge = Paragraph(
+            [
+                "🗻 Challenge myself on ",
+                ' '.join([
+                    icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
+                                       link=item['link']) for item in
+                    info['about']['challenge'].values()
+                ])
+            ]
+        )
 
         # listen = Paragraph(
         #     [
@@ -70,7 +67,7 @@ def main():
         #     ]
         # )
 
-        doc.add_element(MDList([currently_working, currently_freelance, currently_hoddy, livein]))
+        doc.add_element(MDList([currently_working, currently_freelance, challenge, livein]))
 
         doc.add_paragraph("---")
         doc.add_header("💡 My Knowledge", 3)
