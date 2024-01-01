@@ -8,7 +8,7 @@
 
 - 🖥️ Currently working at [Tri Petch IT Solutions](https://www.tripetchgroup.com/en/tripetchitsolutions)
 - ⌨️ Currently freelance at [Duckgorup Co., Ltd.](https://www.duckgroup.co)
-- 🗻 Challenge myself on [![leetcode](https://img.shields.io/badge/-leetcode-444444?style=flat-square&amp;labelColor=444444&amp;logoColor=white&amp;logo=leetcode)](https://www.hackerrank.com/bankuu)
+- 🗻 Challenge myself on [![leetcode](https://img.shields.io/badge/-leetcode-444444?style=flat-square&amp;labelColor=444444&amp;logoColor=white&amp;logo=leetcode)](https://leetcode.com/nutchaitat-devtortech)
 - 🛌 Live in Bangkok, Thailand
 
 ---
