@@ -6,9 +6,9 @@
 
 ### 🙋🏽 My Facts
 
-- 🖥️ Currently working at [Kayena Marketing Simulations](https://kayena-simulations.io)
-- ⌨️ Currently freelance at [GōRUTAN Network](https://gorutan.net)
-- 🗻 Challenge myself on [![HackerRank](https://img.shields.io/badge/-HackerRank-3AC66D?style=flat-square&amp;labelColor=3AC66D&amp;logoColor=white&amp;logo=hackerrank)](https://www.hackerrank.com/bankuu)
+- 🖥️ Currently working at [Tri Petch IT Solutions](https://www.tripetchgroup.com/en/tripetchitsolutions)
+- ⌨️ Currently freelance at [Duckgorup Co., Ltd.](https://www.duckgroup.co)
+- 🗻 Challenge myself on [![leetcode](https://img.shields.io/badge/-leetcode-444444?style=flat-square&amp;labelColor=444444&amp;logoColor=white&amp;logo=leetcode)](https://www.hackerrank.com/bankuu)
 - 🛌 Live in Bangkok, Thailand
 
 ---

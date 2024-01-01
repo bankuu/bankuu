@@ -56,17 +56,6 @@ def main():
             ]
         )
 
-        # listen = Paragraph(
-        #     [
-        #         "🎧 Music taste at ",
-        #         ' '.join([
-        #             icon_format.format(text=parse.quote(item['name']), color=item['color'], logo=item['shields-icon'],
-        #                                link=item['link']) for item in
-        #             info['about']['listen'].values()
-        #         ])
-        #     ]
-        # )
-
         doc.add_element(MDList([currently_working, currently_freelance, challenge, livein]))
 
         doc.add_paragraph("---")

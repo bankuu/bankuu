@@ -34,16 +34,10 @@ about:
       link: 'https://buy.stripe.com/28o6pQ9xceVha8o4gj'
   challenge:
     leetcode:
-      name: 'HackerRank'
-      shields-icon: 'hackerrank'
-      color: '3AC66D'
-      link: 'https://www.hackerrank.com/bankuu'
-  listen:    
-    citypop:
-      name: 'Citypop.Live'
-      shields-icon: 'googlechrome'
-      color: '800080'
-      link: 'https://www.citypop.live'
+      name: 'leetcode'
+      shields-icon: 'leetcode'
+      color: '444444'
+      link: 'https://leetcode.com/nutchaitat-devtortech'
 
 skill:
   golang:
@@ -83,10 +77,18 @@ skill:
         name: "ReactiveX"
         github: "https://github.com/ReactiveX"
 experience:
+  - code: "tpit"
+    name: "Tri Petch IT Solutions"
+    link: "https://www.tripetchgroup.com/en/tripetchitsolutions"
+    year: "2022 ~ now"
+  - code: "duckgroup"
+    name: "Duckgorup Co., Ltd."
+    link: "https://www.duckgroup.co"
+    year: "2022 ~ now"
   - code: "kayena"
     name: "Kayena Marketing Simulations"
     link: "https://kayena-simulations.io"
-    year: "2022 ~ Now"
+    year: "2022 ~ 2022"
   - code: "gorutan"
     name: "GōRUTAN Network"
     link: "https://gorutan.net"
@@ -111,8 +113,3 @@ experience:
     name: "Nysiis Solutions Co., Ltd."
     link: "http://nysiissolutions.com"
     year: "2012 ~ 2014"
-
-side-project:
-  - code: god2rt
-    name: "God2rt"
-    link: "https://god2rt.com/project"
