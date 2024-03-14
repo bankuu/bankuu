@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 void main() {
   runApp(
     GetCupertinoApp(
-      title: "BANKUU - Curriculum Vitae",
+      title: "BANKUU - bankuu.info",
       initialRoute: "/",
       theme: CupertinoThemeData(
         brightness: Brightness.dark,

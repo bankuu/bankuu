@@ -21,46 +21,12 @@ class WelcomeController extends GetxController {
 
   WelcomeController._internal();
 
-  onEnter() {
-    if (isEntering.isTrue) {
-      return;
-    }
-
-    isEntering.value = true;
-
-    _timer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
-      if (timer.tick % 3 == 0) {
-        if (textOpacity.value == 0) {
-          textOpacity.value = 1;
-        } else {
-          textOpacity.value = 0;
-        }
-      }
-
-      if (welcomeFooter.speedMultiplier.value > 0.1 && isToMainMenu.isFalse) {
-        welcomeFooter.speedMultiplier.value = welcomeFooter.speedMultiplier.value - (welcomeFooter.speedMultiplier.value / 3);
-      } else {
-        if (isToMainMenu.isFalse) {
-          welcomeFooter.speedMultiplier.value = 0.01;
-          isToMainMenu.value = true;
-        }
-
-        if (welcomeFooter.speedMultiplier.value < 8) {
-          welcomeFooter.speedMultiplier.value = welcomeFooter.speedMultiplier.value + 0.25;
-        } else {
-          Get.offNamed("/portfolio");
-        }
-      }
-    });
-  }
-
   @override
   void onClose() {
     _timer?.cancel();
     super.onClose();
   }
 //endregion Welcome
-
 }
 
 class _SpeedController extends SimpleAnimation {
